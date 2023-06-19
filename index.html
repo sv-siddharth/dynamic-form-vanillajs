@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+
+  <body>
+    <div id="app"></div>
+    <div class="wrapper">
+      <div id="survey_options">
+        <input
+          type="text"
+          class="survey_options"
+          name="survey_options[]"
+          placeholder="Name"
+        />
+        <input
+          type="text"
+          class="survey_options"
+          name="survey_options[]"
+          placeholder="Email"
+        />
+        <input
+          type="text"
+          class="survey_options"
+          name="survey_options[]"
+          placeholder="Another Field"
+        />
+      </div>
+      <div class="controls">
+        <a href="#" id="add_more_fields"><i class="fa fa-plus"></i>Add More</a>
+        <a href="#" id="remove_fields"
+          ><i class="fa fa-minus"></i>Remove Field</a
+        >
+      </div>
+      <a href="#" id="print-values-btn"
+        ><i class="fa fa-minus"></i>Print Values</a
+      >
+      <div class="print-values" id="print-values-ctn"></div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
